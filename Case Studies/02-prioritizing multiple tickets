@@ -1,0 +1,165 @@
+# Case 02: Prioritizing Multiple IT Support Incidents
+
+**Focus:** Incident Management | Business Impact | SLA Awareness | Multitasking | Communication | Ownership
+
+## 1. Incident Overview
+
+Several requests need attention at nearly the same time. I have to decide where to focus first without allowing the other tickets to stand still.
+
+| Ticket | Initial information | What I need to establish |
+| --- | --- | --- |
+| A: Approaching SLA breach | One application function is unavailable. The user has a workaround. The resolution SLA expires in 20 minutes, and the ticket is assigned to a resolver group. | Current status, responsible team, next action, and escalation route |
+| B: Frustrated user | An employee requests immediate help. | What is failing, whether work is blocked, and how widely the issue affects others |
+| C: New employee setup | A device needs to be ready for a new starter. | Start time, what remains to be done, and whether the task can be delegated |
+| D: Critical application outage | Ten employees cannot access a business-critical application. No workaround is known. | Confirmed scope, business impact, and the fastest route to the responsible team |
+
+**Initial assessment:** Ticket D has the greatest known business impact. Ticket A has a contractual deadline that cannot be ignored. Tickets B and C need enough attention to establish their urgency and keep them moving.
+
+This is a composite case based on situations I have encountered during 14 years in IT support and customer service. The precise combination of tickets is illustrative; the decision-making approach reflects my professional experience.
+
+## 2. My First Assessment
+
+I start by separating **impact**, **urgency**, and **SLA status**. They are related, but they are not interchangeable.
+
+- **Impact:** Who is affected, and which business processes cannot continue?
+- **Urgency:** How quickly does action need to be taken, considering deadlines and workarounds?
+- **SLA status:** What commitment applies, how much time remains, and who is responsible for the next step?
+
+The report about ten employees unable to work gets my immediate attention. Before assuming the incident is fully understood, I check whether the application is unavailable to all ten employees, when the problem started, whether other teams are affected, and whether any workaround exists.
+
+For the other tickets, I do not equate an impatient request with high priority or assume that an approaching SLA breach automatically outweighs a wider business disruption. I use the organization's priority matrix and escalation procedures to confirm the correct classification.
+
+## 3. Decision Flow
+
+```mermaid
+flowchart TD
+    A[Multiple tickets require attention] --> B[Review available facts and business impact]
+    B --> C{Is a critical business process blocked?}
+    C -- Yes --> D[Focus on the critical incident]
+    C -- No --> E[Rank by impact, urgency and agreed priority rules]
+    D --> F[Confirm scope, symptoms and workaround]
+    F --> G{Can first line restore service quickly using an approved action?}
+    G -- Yes --> H[Apply approved action and verify service]
+    G -- No --> I[Document findings and escalate to the correct resolver group]
+    E --> J[Assign next actions and deadlines]
+    H --> K[Update affected users and incident record]
+    I --> K
+    J --> L[Keep other tickets moving through short actions]
+    K --> L
+    L --> M[Reassess when new information arrives]
+    M --> B
+```
+
+The diagram shows the decision sequence, not a requirement to finish one ticket before touching another. Some actions can run in parallel through brief messages, delegation, and follow-up.
+
+## 4. Investigation and Action Branches
+
+<details>
+<summary><strong>Branch A: Ten employees cannot work</strong></summary>
+
+My main focus is to make Ticket D actionable as quickly as possible.
+
+1. Review the original report before asking employees to repeat information already provided.
+2. Confirm the affected application, symptoms, error messages, start time, number of affected users, and business process involved.
+3. Check whether the issue has already been reported elsewhere and whether an approved quick check or known solution applies.
+4. If there is no safe first-line resolution, record the findings and route the incident to the responsible resolver group according to the organization's procedures.
+5. Tell the affected employees, or their representative, what happens next and how updates will be provided.
+
+I want the next team to receive a useful incident report, not simply a ticket that says *the application doesn't work*.
+
+</details>
+
+<details>
+<summary><strong>Branch B: Frustrated user needs attention</strong></summary>
+
+While my main investigation is moving forward, I can send a short acknowledgment to Ticket B through the approved support channel:
+
+> I understand this is frustrating. I want to make sure we handle it correctly. What are you trying to do, what happens when you try, and are you currently unable to continue your work?
+
+Those questions help me establish the actual impact without starting a second full investigation in the middle of a critical call. The user knows the request has been seen, and their response may give me enough information to adjust the priority or prepare the next step.
+
+If the reply shows that a wider team is affected or a critical task is blocked, I reassess immediately.
+
+</details>
+
+<details>
+<summary><strong>Branch C: SLA breach approaching</strong></summary>
+
+Ticket A remains important even though the user has a workaround.
+
+1. Check the agreed SLA target, ticket history, current assignment, and work already completed.
+2. Verify that the workaround remains usable and the user has been informed.
+3. Alert the responsible service manager, SLA coordinator, or resolver group through the escalation channel required by the organization. With only 20 minutes remaining, an email alone may not be sufficient.
+4. Record the communication and any response in the ticket.
+5. Follow up according to the agreed process, without implying that first-line support can personally deliver a fix owned by another technical team or external provider.
+
+A possible breach needs visibility and action. It does not automatically mean I should abandon the incident affecting ten employees.
+
+</details>
+
+<details>
+<summary><strong>Branch D: New employee device setup</strong></summary>
+
+I check the actual start time, whether the device is already prepared, what work remains, and whether another colleague can take over.
+
+If the deadline is close, I coordinate an appropriate handover or make sure the responsible person knows exactly what remains. If the setup can safely wait, I record the next action and return to it when the more urgent work is under control.
+
+The deadline matters, but I first need to know whether the new employee is about to be blocked from working.
+
+</details>
+
+## 5. Multitasking Without Losing Focus
+
+I do not try to conduct four full investigations at once. I distinguish between the task that needs sustained attention and the smaller actions that prevent other tickets from becoming inactive.
+
+| Main focus | Short parallel action | Why it matters |
+| --- | --- | --- |
+| Investigate the ten-user outage | Acknowledge the frustrated user's request and ask targeted questions | The user feels heard, and new information can clarify priority |
+| Prepare the critical incident for escalation | Notify the SLA owner of the approaching deadline | The contractual risk is visible to the responsible person |
+| Coordinate with the resolver group | Check the device setup deadline and arrange help if needed | The new starter is less likely to be delayed |
+| Track the critical incident | Document communications, assignments, and next actions | Other tickets do not disappear from view |
+
+Timing matters. I would not interrupt an important conversation just to send routine messages. I use natural gaps, shared ticket pools, and colleagues where available. If a ticket needs immediate action, I escalate or delegate rather than pretend I can give everything my full attention.
+
+## 6. Communication and Ownership
+
+For me, ownership is not the same as personally solving every technical issue.
+
+Some incidents belong with specialist resolver groups or external providers. My responsibility is to collect useful information, follow the applicable workflow, document my actions, communicate clearly, and ensure an appropriate next step is assigned.
+
+I keep users informed without promising resolution times I cannot control. When the priority changes, I update the ticket and communicate the change to the people or teams who need to know.
+
+The service desk should remain a reliable point of contact, even when the technical work is performed elsewhere.
+
+## 7. Outcome and Follow-Up
+
+This case illustrates the decisions and actions I would take; it does not claim that the four incidents were resolved within a particular time.
+
+The intended result is that:
+
+- **Ticket D** is promptly assessed, documented, and escalated or resolved through an approved first-line action.
+- **Ticket A** has a visible SLA warning, a responsible owner, and documented follow-up.
+- **Ticket B** receives acknowledgment and targeted questions that allow an informed priority assessment.
+- **Ticket C** has a confirmed deadline and an assigned next action or handover.
+
+I continue reviewing the queue as responses come in. A new fact can change the priority: for example, the frustrated user may reveal that an entire department is affected, or the new starter's device may be needed immediately.
+
+## 8. Reflection
+
+**Prioritization is not only about deciding which ticket comes first. It is about concentrating effort where the business needs it most while keeping the remaining work moving.**
+
+This case demonstrates how I combine:
+
+- Business impact and urgency assessment
+- SLA awareness and appropriate escalation
+- Focused investigation with practical multitasking
+- Empathetic, proactive user communication
+- Accurate documentation and handovers
+- Ownership across shared queues and specialist resolver teams
+- Reassessment when new information changes the situation
+
+The approach is grounded in my experience of service desks evolving from individual ticket ownership to centralized support and shared ticket pools. Processes differ between organizations, but the underlying judgment stays the same: understand the impact, act on the most important information, involve the right people, and follow through.
+
+---
+
+*Case note: Composite training scenario informed by 14 years of professional IT support and customer service experience. No specific historical incident or resolution result is being claimed.*
